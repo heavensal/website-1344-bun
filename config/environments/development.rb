@@ -47,7 +47,7 @@ Rails.application.configure do
     address: 'mail.1344.fr',
     port: 587,
     user_name: 'hello@1344.fr',
-    password: "LamouriLeila13!"
+    password: ENV['MAIL_PASSWORD']
   }
 
   # Print deprecation notices to the Rails logger.
