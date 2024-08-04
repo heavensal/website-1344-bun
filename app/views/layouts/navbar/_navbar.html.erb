@@ -1,0 +1,30 @@
+<header class="sticky top-4 z-50 text-white xl:text-xl">
+  <nav class="w-4/5 xl:w-2/3 mx-auto h-16 bg-gradient from-blue to-purple bg-opacity-20 rounded-lg shadow-lg backdrop-blur-md border border-white border-opacity-30 flex">
+    <div class="w-1/6 flex justify-center items-center">
+      <%= link_to root_path do %>
+        <%= image_tag "1344-logo.png", alt: "Logo 1344", class: "h-12 hover:rotate-45 hover:duration-150 transition", title: "1344 Solutions - Accueil" %>
+      <% end %>
+    </div>
+
+    <ul class="flex items-center justify-between w-5/6 h-full px-4">
+      <li class="navbar-item">
+        <%= link_to 'Consulting', consulting_path, class: 'transition hover:duration-300 hover:drop-shadow-[0_0_0.75rem_rgba(220,20,60,1)]' %>
+      </li>
+      <li class="navbar-item">
+        <%= link_to "Application Web", web_path, class: 'transition hover:duration-300 hover:hover:drop-shadow-[0_0_0.75rem_rgba(220,20,60,1)] inline-block p-2'  %>
+      </li>
+      <li class="navbar-item">
+        <%= link_to "Automatisation", automation_path, class: 'transition hover:duration-300 hover:hover:drop-shadow-[0_0_0.75rem_rgba(220,20,60,1)] inline-block p-2'  %>
+      </li>
+      <li class="navbar-item">
+        <%= link_to "Marketing", marketing_path, class: 'transition hover:duration-300 hover:hover:drop-shadow-[0_0_0.75rem_rgba(220,20,60,1)] inline-block p-2'  %>
+      </li>
+      <li class="navbar-item">
+        <%= link_to "Hébergement", hosting_path, class: 'transition hover:duration-300 hover:hover:drop-shadow-[0_0_0.75rem_rgba(220,20,60,1)] inline-block p-2'  %>
+      </li>
+    </ul>
+
+
+  </nav>
+
+</header>

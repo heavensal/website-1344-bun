@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website1344Bun</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="turbo-visit-control" content="reload">
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "dynamic" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "dynamic", type: "module" %>
+  </head>
+
+  <body class="font-main">
+    <%= render 'layouts/navbar/navbar' %>
+    <%= yield %>
+    <%= render 'layouts/footer' %>
+    <%# <div id="react-root" class="-z-40 absolute h-full w-full inset-0  [mask-size:40px] [mask-repeat:no-repeat] flex items-center justify-center"></div> %>
+    <%= render 'layouts/bg-1344' %>
+  </body>
+</html>
