@@ -1,14 +1,9 @@
 {
   "name": "website-1344",
   "private": true,
-  "packageManager": "yarn@4.3.1",
-  "engines": {
-    "node": "20.8.1"
-  },
   "scripts": {
     "build": "bun bun.config.js",
-    "build:css": "tailwindcss -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/application.css --minify",
-    "postinstall": "bun install && yarn build:css"
+    "build:css": "tailwindcss -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/application.css --minify"
   },
   "dependencies": {
     "@hotwired/stimulus": "^3.2.2",
