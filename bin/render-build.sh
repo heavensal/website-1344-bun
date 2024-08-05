@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
-# exit on error
-set -o errexit
+set -e
 
-bundle install
-bundle exec rails assets:precompile
-bundle exec rails assets:clean
+curl -fsSL https://bun.sh/install | bash
+export PATH="$HOME/.bun/bin:$PATH"
+bun install
